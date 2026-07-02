@@ -9,10 +9,28 @@
   <body>
     <main class="dashboard-shell">
       <div class="dashboard-card">
-        <h1>Welcome to PromptPilot</h1>
-        <p>Your login works. The prompt debugger connects here.</p>
-        <a class="button-link" href="/logout">Logout</a>
+        <div class="dashboard-header">
+          <div>
+            <h1>PromptPilot Debugger</h1>
+            <p>Enter a prompt below and press Analyze to get feedback on what may be wrong or right.</p>
+          </div>
+          <a class="button-link" href="/logout">Logout</a>
+        </div>
+
+        <form id="promptForm" class="dashboard-form">
+          <label for="promptInput">Prompt</label>
+          <textarea id="promptInput" rows="8" placeholder="Describe the task, goals, format, and any constraints..."></textarea>
+          <button type="submit">Analyze</button>
+        </form>
+
+        <section class="result-panel" id="resultPanel">
+          <h2>Analysis</h2>
+          <p class="result-summary">Enter a prompt and click Analyze to see advice.</p>
+          <ul class="result-list" id="resultList"></ul>
+        </section>
       </div>
     </main>
+
+    <script src="dashboard.js"></script>
   </body>
 </html>
