@@ -93,7 +93,7 @@ button:hover {
 
 .dashboard-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;   
   align-items: flex-start;
   gap: 24px;
 }
