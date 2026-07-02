@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PromptPilot Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login-shell">
+      <div class="login-card">
+        <h1>PromptPilot</h1>
+        <p class="tagline">Login to access the prompt debugger.</p>
+
+        <form id="loginForm">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="user@promptpilot.com" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Password123" required />
+
+          <button type="submit">Sign in</button>
+          <p class="hint">Use <strong>user@promptpilot.com</strong> / <strong>Password123</strong></p>
+          <p id="errorMessage" class="error-message"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>
