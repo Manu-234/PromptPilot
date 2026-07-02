@@ -67,6 +67,101 @@ button:hover {
   background: #5169ff;
 }
 
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background: #2f49e0;
+  padding: 12px 18px;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.dashboard-shell {
+  width: min(860px, calc(100vw - 32px));
+}
+
+.dashboard-card {
+  background: rgba(14, 18, 50, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;   
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.dashboard-header p {
+  margin: 8px 0 0;
+  color: #b8c1ff;
+}
+
+.dashboard-form {
+  margin-top: 28px;
+}
+
+.dashboard-form label {
+  display: block;
+  margin-bottom: 12px;
+  color: #c7d0ff;
+}
+
+.dashboard-form textarea {
+  width: 100%;
+  min-height: 180px;
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #f7f8ff;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.result-panel {
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.result-panel h2 {
+  margin-top: 0;
+}
+
+.result-summary {
+  color: #b8c1ff;
+  margin: 0 0 16px;
+}
+
+.result-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.result-list li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
 .hint {
   margin: 12px 0 0;
   color: #8a95c8;
