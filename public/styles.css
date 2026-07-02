@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at top, #1b2370 0%, #080a1f 48%, #050610 100%);
+  color: #f4f7ff;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.login-shell {
+  width: min(420px, calc(100vw - 32px));
+}
+
+.login-card {
+  background: rgba(14, 18, 50, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+}
+
+.login-card h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.tagline {
+  margin: 0 0 24px;
+  color: #b8c1ff;
+}
+
+label {
+  display: block;
+  margin: 18px 0 8px;
+  font-size: 0.95rem;
+  color: #c7d0ff;
+}
+
+input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+  color: #f7f8ff;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px 16px;
+  border: none;
+  border-radius: 14px;
+  background: #6d7dff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5169ff;
+}
+
+.hint {
+  margin: 12px 0 0;
+  color: #8a95c8;
+  font-size: 0.93rem;
+}
+
+.error-message {
+  margin: 14px 0 0;
+  color: #ff7f8f;
+  min-height: 1.2rem;
+}
